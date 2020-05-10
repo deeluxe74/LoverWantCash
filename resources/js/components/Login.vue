@@ -15,7 +15,7 @@
       </div>
 
       <div class="bg-pink h-50 pl-4 py-3">
-        <h1 class="cl-black">Inscription</h1>
+        <h1>Inscription</h1>
         <form @submit.prevent="signUp" enctype="multipart/form-data" action="api/signUp">
           <h2>Email</h2>
           <input v-model="email" required type="email" class="form-control">
