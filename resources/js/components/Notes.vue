@@ -2,7 +2,7 @@
     <div class="bg-grey py-3 align-center" v-if="allNotes.length >= 1">
         <div class="mb-5">
             <div class="mb-3 bg-white p-2">
-                <h2 class="cl-black">{{ nameCount }} doieet {{ count }}</h2>
+                <h2 class="cl-black">{{ nameCount }} doit {{ count }}</h2>
             </div>
             <div class="d-flex justify-content-end" v-if="currUser.lover_id">
                 <button v-if="countMonth" @click="totalCount(notes, '€ ce mois')" class="btn btn-info btn-all">Dette pour ce mois</button>
