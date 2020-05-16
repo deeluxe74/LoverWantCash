@@ -2,7 +2,7 @@
     <div class="bg-grey py-3 align-center" v-if="allNotes.length >= 1">
         <div class="mb-5">
             <div class="mb-3 bg-white p-2">
-                <h2 class="cl-black">{{ nameCount }} doit {{ count }}</h2>
+                <h2 class="cl-white">{{ nameCount }} doit {{ count }}</h2>
             </div>
             <div class="d-flex justify-content-end" v-if="currUser.lover_id">
                 <button v-if="countMonth" @click="totalCount(notes, '€ ce mois')" class="btn btn-info btn-all">Dette pour ce mois</button>
@@ -13,7 +13,7 @@
             <div v-if="!changMonth" class="d-flex flex-row justify-content-center my-2"><h3>{{ month }}</h3><h4 class="ml-2">{{ selectYear }}</h4><i @click="changMonth = !changMonth" class="hover fas fa-edit cl-white mt-2 ml-2"></i></div>
             <div v-if="changMonth" class="d-flex flex-row justify-content-center">
                 <select v-model="month" class="form-control mr-2">
-                    <option>JAJIvier</option>
+                    <option>Janvierr</option>
                     <option>Février</option>
                     <option>Mars</option>
                     <option>Avril</option>
