@@ -40715,7 +40715,7 @@ var render = function() {
                         "div",
                         { key: "notes" + index, staticClass: "note mb-2" },
                         [
-                          _c("h4", { staticClass: "date mb-1" }, [
+                          _c("h4", { staticClass: "date mb-1 cl-black" }, [
                             _vm._v(_vm._s(note.date))
                           ]),
                           _vm._v(" "),

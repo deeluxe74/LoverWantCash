@@ -33,7 +33,7 @@
             </div>
             <div v-if="!load" class="d-flex flex-column align-items-center">
                 <div v-for="(note, index) in notes" class="note mb-2" :key="'notes' + index">
-                    <h4 class="date mb-1">{{ note.date }}</h4>
+                    <h4 class="date mb-1 cl-black">{{ note.date }}</h4>
                     <div :class="currUser.id == note.id_user ? 'bg-pink' : 'bg-white'" class="note-badge badge d-flex flex-row justify-content-between align-items-center">
                     
                         <i v-if="note.designation == 'Electricité'" class="icone fas fa-bolt fa-2x"></i>
