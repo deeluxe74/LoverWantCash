@@ -39959,6 +39959,8 @@ var render = function() {
             "div",
             { staticClass: "bg-grey" },
             [
+              _c("nav-bar", { staticClass: "index-1" }),
+              _vm._v(" "),
               _vm.isIos ? _c("is-ios-message") : _vm._e(),
               _vm._v(" "),
               _c(

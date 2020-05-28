@@ -3,7 +3,7 @@
     <display-message class="ml-3 index-2" :errors="errors" :success="success"></display-message>
     <login v-if="!user" class="height-100"></login>
     <div v-else class="bg-grey">
-      
+      <nav-bar class="index-1"></nav-bar>
       <is-ios-message v-if="isIos"></is-ios-message>
       <transition name="fade" mode="out-in" appear>
         <router-view class="height index-0"></router-view>     
