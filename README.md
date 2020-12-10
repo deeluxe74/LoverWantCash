@@ -1,79 +1,63 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## About Laravel
+# LoverWantCash
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### L'application de gestion de budget spécial couple !
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Vous avez des dépenses en commun avec une personne, souvent vous ne savez plus on vous en êtes ?
+**Lover Want Cash** est fait pour vous !
+Lover Want Cash permet de connaitre le montant que chaque personne doit à l'autre. De plus, elle permet de créer des notes, se lier à une personne, voir ses dettes, obtenir des graphiques sur votre budget par mois/années/catégories, reconsulter les notes des mois précédents.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Pour profiter de toutes les fonctionnalités, il faudra vous lier à une personne n'importe qui tant que vous avez des dépenses en commun ! Si vous souhaitez profiter de l'application seul celle-ci vous permet de sauvegarder vos dépenses et de les consulter.
 
-## Learning Laravel
+À chaque fin de mois la même question : Combien avez-vous dépensé ? Combien votre conjoint a-t-il dépensé ? Plus besoin de vous poser ces questions, l'application vous le dit. Vous pouvez consulter toutes les informations sur vos dépenses ainsi que celles de votre conjoint.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Installation sur votre système
+**Développé en Laravel et Vue.js (Javascript, PHP)** <br>
 
-## Laravel Sponsors
+Le projet peut être mis en place rapidement grâce à une commande, cela va installer tous les fichiers nécessaires à l'intérieur 
+de nodes-modules :
+```
+npm run install
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Il faut installer le fichier vendor :
+```
+composer install
+```
+Lancer votre serveur php :
+```
+php artisan serve
+```
+Ensuite il ne vous reste plus qu'a exécuté le lancement du serveur avec :
+```
+npm run watch
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+N'oubliez pas de lancer Xampp et éditer le .env pour relier la base de données et lancer les migrations (php artisan migrate).
 
-## Contributing
+**Bonne nouvelle**, cette application est hébergée pour que vous puissiez la tester.<br>
+[loverwantcash.noteatcookie.fr](loverwantcash.noteatcookie.fr)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**Ce projet est disponible avec des explications détaillées ainsi que des illustrations sur [mon site](https://www.rollet-raphael.com/project).**
 
-## Code of Conduct
+**Ne manquer pas de me faire un retour sur le projet !**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/deeluxe74/LoverWantCash.svg?style=for-the-badge
+[contributors-url]: https://github.com/deeluxe74/LoverWantCash/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/deeluxe74/LoverWantCash.svg?style=for-the-badge
+[forks-url]: https://github.com/deeluxe74/LoverWantCash/network/members
+[stars-shield]: https://img.shields.io/github/stars/deeluxe74/LoverWantCash.svg?style=for-the-badge
+[stars-url]: https://github.com/deeluxe74/LoverWantCash/stargazers
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/rollet-raphael/
+[product-screenshot]: images/screenshot.png
